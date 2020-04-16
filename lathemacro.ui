@@ -926,7 +926,7 @@
                         <property name="label" translatable="yes">Speed</property>
                       </object>
                     </child>
-                  </object>t
+                  </object>
                   <packing>
                     <property name="left_attach">10</property>
                     <property name="right_attach">11</property>
@@ -937,20 +937,26 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="turn.action">
-                    <property name="width_request">50</property>
-                    <property name="height_request">20</property>
+                  <object class="GtkEventBox" id="eventbox200">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="related_action">turn.go</property>
-                    <property name="use_action_appearance">False</property>
-                    <property name="use_underline">True</property>
+                    <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImage" id="image1">
+                      <object class="GtkButton" id="turn.action">
+                        <property name="width_request">50</property>
+                        <property name="height_request">20</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="icon_name">media-playback-start</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="related_action">turn.go</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="use_underline">True</property>
+                        <child>
+                          <object class="GtkImage" id="image1">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="icon_name">media-playback-start</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -1659,20 +1665,26 @@
                 <property name="n_columns">12</property>
                 <property name="homogeneous">True</property>
                 <child>
-                  <object class="GtkButton" id="bore.action">
-                    <property name="width_request">50</property>
-                    <property name="height_request">20</property>
+                  <object class="GtkEventBox" id="eventbox201">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="related_action">bore.go</property>
-                    <property name="use_action_appearance">False</property>
-                    <property name="use_underline">True</property>
+                    <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImage" id="image4">
+                      <object class="GtkButton" id="bore.action">
+                        <property name="width_request">50</property>
+                        <property name="height_request">20</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="icon_name">media-playback-start</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="related_action">bore.go</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="use_underline">True</property>
+                        <child>
+                          <object class="GtkImage" id="image4">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="icon_name">media-playback-start</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -1872,7 +1884,7 @@
                     <property name="secondary_icon_activatable">False</property>
                     <property name="primary_icon_sensitive">True</property>
                     <property name="secondary_icon_sensitive">True</property>
-                    <property name="adjustment">adjustment2</property>
+                    <property name="adjustment">TurnSFAdj</property>
                     <signal name="button-press-event" handler="show_keyb" swapped="no"/>
                   </object>
                   <packing>
@@ -2630,18 +2642,24 @@
                 <property name="n_columns">12</property>
                 <property name="homogeneous">True</property>
                 <child>
-                  <object class="GtkButton" id="face.action">
-                    <property name="width_request">50</property>
-                    <property name="height_request">20</property>
+                  <object class="GtkEventBox" id="eventbox202">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="related_action">face.go</property>
-                    <property name="use_underline">True</property>
+                    <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImage" id="image2">
-                        <property name="can_focus">False</property>
-                        <property name="icon_name">media-playback-start</property>
+                      <object class="GtkButton" id="face.action">
+                        <property name="width_request">50</property>
+                        <property name="height_request">20</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="related_action">face.go</property>
+                        <property name="use_underline">True</property>
+                        <child>
+                          <object class="GtkImage" id="image2">
+                            <property name="can_focus">False</property>
+                            <property name="icon_name">media-playback-start</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -2688,7 +2706,7 @@
                     <property name="secondary_icon_activatable">False</property>
                     <property name="primary_icon_sensitive">True</property>
                     <property name="secondary_icon_sensitive">True</property>
-                    <property name="adjustment">adjustment10</property>
+                    <property name="adjustment">TurnSFAdj</property>
                     <signal name="button-press-event" handler="show_keyb" swapped="no"/>
                   </object>
                   <packing>
@@ -3576,18 +3594,24 @@
                 <property name="n_columns">12</property>
                 <property name="homogeneous">True</property>
                 <child>
-                  <object class="GtkButton" id="radius.action">
-                    <property name="width_request">50</property>
-                    <property name="height_request">20</property>
+                  <object class="GtkEventBox" id="eventbox203">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="related_action">radius.go</property>
-                    <property name="use_underline">True</property>
+                    <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImage" id="image3">
-                        <property name="can_focus">False</property>
-                        <property name="icon_name">media-playback-start</property>
+                      <object class="GtkButton" id="radius.action">
+                        <property name="width_request">50</property>
+                        <property name="height_request">20</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="related_action">radius.go</property>
+                        <property name="use_underline">True</property>
+                        <child>
+                          <object class="GtkImage" id="image3">
+                            <property name="can_focus">False</property>
+                            <property name="icon_name">media-playback-start</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -3788,7 +3812,7 @@
                     <property name="secondary_icon_activatable">False</property>
                     <property name="primary_icon_sensitive">True</property>
                     <property name="secondary_icon_sensitive">True</property>
-                    <property name="adjustment">adjustment17</property>
+                    <property name="adjustment">TurnSFAdj</property>
                     <signal name="button-press-event" handler="show_keyb" swapped="no"/>
                   </object>
                   <packing>
@@ -4548,20 +4572,26 @@
                 <property name="n_columns">12</property>
                 <property name="homogeneous">True</property>
                 <child>
-                  <object class="GtkButton" id="chamfer.action">
-                    <property name="width_request">50</property>
-                    <property name="height_request">20</property>
+                  <object class="GtkEventBox" id="eventbox204">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="related_action">chamfer.go</property>
-                    <property name="use_action_appearance">False</property>
-                    <property name="use_underline">True</property>
+                    <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImage" id="image5">
+                      <object class="GtkButton" id="chamfer.action">
+                        <property name="width_request">50</property>
+                        <property name="height_request">20</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="icon_name">media-playback-start</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="related_action">chamfer.go</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="use_underline">True</property>
+                        <child>
+                          <object class="GtkImage" id="image5">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="icon_name">media-playback-start</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
@@ -4758,7 +4788,7 @@
                     <property name="secondary_icon_activatable">False</property>
                     <property name="primary_icon_sensitive">True</property>
                     <property name="secondary_icon_sensitive">True</property>
-                    <property name="adjustment">adjustment22</property>
+                    <property name="adjustment">TurnSFAdj</property>
                     <signal name="button-press-event" handler="show_keyb" swapped="no"/>
                   </object>
                   <packing>
@@ -5519,20 +5549,26 @@
                 <property name="n_columns">12</property>
                 <property name="homogeneous">True</property>
                 <child>
-                  <object class="GtkButton" id="thread.action">
-                    <property name="width_request">50</property>
-                    <property name="height_request">20</property>
+                  <object class="GtkEventBox" id="eventbox205">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="receives_default">True</property>
-                    <property name="related_action">thread.go</property>
-                    <property name="use_action_appearance">False</property>
-                    <property name="use_underline">True</property>
+                    <property name="can_focus">False</property>
                     <child>
-                      <object class="GtkImage" id="image6">
+                      <object class="GtkButton" id="thread.action">
+                        <property name="width_request">50</property>
+                        <property name="height_request">20</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">False</property>
-                        <property name="icon_name">media-playback-start</property>
+                        <property name="can_focus">True</property>
+                        <property name="receives_default">True</property>
+                        <property name="related_action">thread.go</property>
+                        <property name="use_action_appearance">False</property>
+                        <property name="use_underline">True</property>
+                        <child>
+                          <object class="GtkImage" id="image6">
+                            <property name="visible">True</property>
+                            <property name="can_focus">False</property>
+                            <property name="icon_name">media-playback-start</property>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>

@@ -46,7 +46,7 @@ class HandlerClass:
         x, y, w, h = tab.allocation
         sx, sy, sw, sh =  self.svg.get_dimension_data()
         cr.translate(0, y)
-        cr.scale(1.0 *w / sw, 1.0*h/sh)
+        cr.scale(1.0 * w / sw, 1.0 * h / sh)
         self.svg.render_cairo(cr = cr, id = '#layer%i' % tab_num)
 
     # This catches our messages from another program
@@ -78,7 +78,7 @@ class HandlerClass:
     def __init__(self, halcomp,builder,useropts):
         self.halcomp = halcomp
         self.builder = builder
-        self.ini_filename = 'savestate.sav'
+        self.ini_filename = 'LatheMacros/savestate.sav'
         self.defaults = {  IniFile.vars: dict(),
                            IniFile.widgets : widget_defaults(select_widgets(self.builder.get_objects(), hal_only=False,output_only = True))
                         }
@@ -100,7 +100,7 @@ class HandlerClass:
         t.connect_after("expose_event", self.on_expose)
         t.connect("destroy", gtk.main_quit)
         t.add_events(gtk.gdk.STRUCTURE_MASK)
-        self.svg = rsvg.Handle(file='LatheMacro.svg', )
+        self.svg = rsvg.Handle(file='LatheMacros/LatheMacro.svg', )
 
     def show_keyb(self, obj, data=None):
         self.active_ctrl = obj
@@ -196,6 +196,5 @@ def get_handlers(halcomp,builder,useropts):
 
     set_debug(debug)
     return [HandlerClass(halcomp,builder,useropts)]
-
 
 
